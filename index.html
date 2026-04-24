@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOSFILM VIEW</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#about">О проекте</a></li>
+            <li class="nav__item"><a class="nav__link" href="#catalog">Резиденции</a></li>
+            <li class="nav__item"><a class="nav__link" href="#advantages">Преимущества</a></li>
+            <li class="nav__item"><a class="nav__link" href="#gallery">Галерея</a></li>
+            <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
+            <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <button class="header__burger" type="button" aria-label="Открыть меню">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">MOSFILM VIEW</h1>
+            <p class="hero__text">Премиальный квартал с приватным двором, просторными резиденциями и современной архитектурой рядом с центром Москвы.</p>
+
+            <div class="hero__actions">
+              <button class="button button--primary" type="button" data-modal-open>Презентация</button>
+              <a class="button button--secondary" href="#gallery">Галерея</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__section-title section-title">О проекте</h2>
+
+          <div class="about__grid">
+            <div class="about__content">
+              <h3 class="about__title section-title">
+                MOSFILM VIEW -
+                <br />
+                камерный премиальный
+                <br />
+                жилой квартал
+              </h3>
+              <p class="about__text">
+                Светлый камень, бронзовые акценты,
+                <br />
+                приватный двор-сад и выразительная
+                <br />
+                архитектура современного комплекса.
+              </p>
+            </div>
+
+            <div class="about__stat">
+              <span class="about__stat-number">4</span>
+              <span class="about__stat-text">башни в единой архитектуре</span>
+            </div>
+
+            <div class="about__stat">
+              <span class="about__stat-number">16-20</span>
+              <span class="about__stat-text">этажей и ступенчатый силуэт</span>
+            </div>
+
+            <div class="about__stat">
+              <span class="about__stat-number">70%</span>
+              <span class="about__stat-text">территории под озеленение</span>
+            </div>
+
+            <div class="about__stat">
+              <span class="about__stat-number">24/7</span>
+              <span class="about__stat-text">закрытая приватная территория</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="container">
+          <div class="catalog__top">
+            <h2 class="catalog__title section-title">Резиденции</h2>
+          </div>
+
+          <div class="catalog__tabs">
+            <button class="catalog__tab catalog__tab--active" type="button" data-tab="all">Все</button>
+            <button class="catalog__tab" type="button" data-tab="residence">Резиденции</button>
+            <button class="catalog__tab" type="button" data-tab="family">Семейные</button>
+            <button class="catalog__tab" type="button" data-tab="view">Видовые</button>
+            <button class="catalog__tab" type="button" data-tab="penthouse">Пентхаусы</button>
+          </div>
+
+          <div class="catalog__filters">
+            <div class="catalog__filter">
+              <label class="catalog__label" for="area">Площадь</label>
+              <select class="catalog__select" id="area">
+                <option value="all">Любая</option>
+                <option value="120">От 120 м²</option>
+                <option value="180">От 180 м²</option>
+                <option value="250">От 250 м²</option>
+              </select>
+            </div>
+
+            <div class="catalog__filter">
+              <label class="catalog__label" for="floor">Характер</label>
+              <select class="catalog__select" id="floor">
+                <option value="all">Любой</option>
+                <option value="panoramic">Панорамные окна</option>
+                <option value="courtyard">Вид во двор</option>
+                <option value="terrace">Терраса</option>
+              </select>
+            </div>
+
+            <div class="catalog__filter">
+              <label class="catalog__label" for="deadline">Корпус</label>
+              <select class="catalog__select" id="deadline">
+                <option value="all">Любой</option>
+                <option value="a">Башня A</option>
+                <option value="b">Башня B</option>
+                <option value="c">Башня C</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="catalog__cards">
+            <article class="catalog-card" data-category="residence" data-format="residence" data-area="128" data-character="courtyard" data-building="a">
+              <img class="catalog-card__image" src="img/apartment-1.png" />
+              <h3 class="catalog-card__title">Residence</h3>
+              <p class="catalog-card__text">
+                <span>128 м²</span>
+                <span>Панорамные окна</span>
+                <span>Вид во двор</span>
+              </p>
+            </article>
+
+            <article class="catalog-card" data-category="family" data-format="family" data-area="164" data-character="courtyard" data-building="a">
+              <img class="catalog-card__image" src="img/apartment-2.png" />
+              <h3 class="catalog-card__title">Family</h3>
+              <p class="catalog-card__text">
+                <span>164 м²</span>
+                <span>Семейный формат</span>
+                <span>Крупный метраж</span>
+              </p>
+            </article>
+
+            <article class="catalog-card" data-category="view" data-format="family" data-area="198" data-character="panoramic" data-building="b">
+              <img class="catalog-card__image" src="img/apartment-3.png" />
+              <h3 class="catalog-card__title">View</h3>
+              <p class="catalog-card__text">
+                <span>198 м²</span>
+                <span>Угловое остекление</span>
+                <span>Виды на город</span>
+              </p>
+            </article>
+
+            <article class="catalog-card" data-category="penthouse" data-format="penthouse" data-area="286" data-character="terrace" data-building="c">
+              <img class="catalog-card__image" src="img/apartment-4.png" />
+              <h3 class="catalog-card__title">Penthouse</h3>
+              <p class="catalog-card__text">
+                <span>286 м²</span>
+                <span>Терраса</span>
+                <span>Верхний уровень</span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="purchase" id="advantages">
+        <div class="container">
+          <h2 class="purchase__title section-title">Преимущества</h2>
+
+          <div class="purchase__grid">
+            <article class="purchase-card">
+              <h3 class="purchase-card__title">Точный архитектурный характер</h3>
+              <p class="purchase-card__text">Светлый камень, глубокое остекление и бронзовый металл создают собранный и дорогой образ.</p>
+            </article>
+
+            <article class="purchase-card">
+              <h3 class="purchase-card__title">Двор, в который не попадает город</h3>
+              <p class="purchase-card__text">Закрытое зелёное пространство с маршрутами для прогулок, отдыха и вечерней тишины.</p>
+            </article>
+
+            <article class="purchase-card">
+              <h3 class="purchase-card__title">Жильё с ощущением масштаба</h3>
+              <p class="purchase-card__text">Большие планировки, больше света, больше воздуха и верхние уровни с террасным форматом.</p>
+            </article>
+
+            <article class="purchase-card">
+              <h3 class="purchase-card__title">Всё нужное внутри комплекса</h3>
+              <p class="purchase-card__text">Лобби, wellness, кофейня, детская зона и сервисы для ежедневного комфорта.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <div class="gallery__top">
+            <h2 class="gallery__title section-title">Галерея проекта</h2>
+            <div class="gallery__controls">
+              <button class="gallery__arrow" type="button" aria-label="Предыдущий слайд" data-gallery-prev>&#8592;</button>
+              <button class="gallery__arrow" type="button" aria-label="Следующий слайд" data-gallery-next>&#8594;</button>
+            </div>
+          </div>
+
+          <div class="gallery__slider">
+            <div class="gallery__viewport">
+              <div class="gallery__track">
+                <article class="gallery__slide">
+                  <img class="gallery__image" src="img/gallery-1.png" />
+                </article>
+
+                <article class="gallery__slide">
+                  <img class="gallery__image" src="img/gallery-2.png" />
+                </article>
+
+                <article class="gallery__slide">
+                  <img class="gallery__image" src="img/gallery-3.png" />
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="container">
+          <h2 class="location__title section-title">Локация</h2>
+
+          <div class="location__map">
+            <img class="location__map-image" src="img/map.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <h2 class="faq__title section-title">FAQ</h2>
+
+          <div class="faq__list">
+            <article class="faq__item">
+              <button class="faq__question" type="button">
+                <span>Какая архитектура у проекта?</span>
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <p>Светлый камень, стекло, бронзовые акценты и четыре башни в единой концепции.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <button class="faq__question" type="button">
+                <span>Какие есть форматы?</span>
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <p>Просторные резиденции, семейные квартиры, видовые форматы и пентхаусы.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <button class="faq__question" type="button">
+                <span>Каким будет двор?</span>
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <p>Закрытый зелёный двор-сад без машин, с прогулочными дорожками и lounge-зонами.</p>
+              </div>
+            </article>
+
+            <article class="faq__item">
+              <button class="faq__question" type="button">
+                <span>Что есть для резидентов?</span>
+                <span class="faq__icon">+</span>
+              </button>
+              <div class="faq__answer">
+                <p>Лобби, wellness, кофейня, детский клуб, коворкинг и подземный паркинг.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__column">
+          <a class="footer__logo" href="#">MOSFILM VIEW</a>
+          <p class="footer__text">Премиальный квартал на Мосфильмовской.</p>
+        </div>
+
+        <div class="footer__column">
+          <h3 class="footer__subtitle">Навигация</h3>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#about">О проекте</a></li>
+            <li class="footer__item"><a class="footer__link" href="#catalog">Резиденции</a></li>
+            <li class="footer__item"><a class="footer__link" href="#advantages">Преимущества</a></li>
+            <li class="footer__item"><a class="footer__link" href="#gallery">Галерея</a></li>
+            <li class="footer__item"><a class="footer__link" href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h3 class="footer__subtitle">Контакты</h3>
+          <ul class="footer__list">
+            <li class="footer__item">+7 (495) 210-45-88</li>
+            <li class="footer__item">info@mosfilm-view.ru</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button class="modal__close" type="button" aria-label="Закрыть окно">&times;</button>
+        <h2 class="modal__title">Презентация</h2>
+        <p class="modal__text">Оставьте контакты, и мы отправим материалы по проекту.</p>
+
+        <form class="modal__form" action="#">
+          <input class="modal__input" type="text" placeholder="Ваше имя" />
+          <input class="modal__input" type="tel" placeholder="Телефон" />
+          <button class="button button--primary modal__button" type="submit">Отправить заявку</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
